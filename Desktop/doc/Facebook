@@ -1,0 +1,70 @@
+Can you create a business account on Facebook without a personal account?
+Unfortunately, you can't create nor a business Facebook account, nor a FB business page without having personal account. In order not to violate Facebook's policies, you have to use your own personal account to make yourself an administrator of a business' profile.
+
+Can I have a Facebook business account and personal account?
+You can create a personal account or business account, but not both. If you will only be using Facebook for your business, set up your account as a business account, but be aware that business accounts have less functionality and options than personal accounts.
+
+
+How do I add my business to my personal Facebook account?
+Go to facebook.com/pages/create. Enter your business information in the panel on the left. As you do so, the page preview will update in real time on the right. For your page name, use your business name or the name people are likely to search for when trying to find your business.
+
+Is Facebook for business free?
+Just like Facebook profiles and groups, you can set up and use a Facebook Business Page for free – regardless of how many followers or likes you have. Even if you spend money on Facebook Ads, there's still no charge for the organic aspects of your Facebook Business Page.
+
+What are the benefits of having a Facebook business page?
+A Facebook Business Page can connect you with customers and offer key information about your business, products, services, and upcoming events. Facebook Ads and Messenger Ads are highly targeted and effective ways to reach potential customers.
+
+
+Create a Business Profile:
+You need a Facebook profile to create a Business Manager account. You use your Facebook username and password to sign in to Business Manager.
+To create a Business Manager:
+
+Go to business.facebook.com/overview.
+Click Create account.
+Enter a name for your business, your name and work email address and click Next.
+Enter your business details and click Submit.
+
+
+You will need:
+
+Register as a Facebook Developer
+A Facebook App – This app will be for testing so there is no need to involve your app code when creating this Facebook App.
+1.Start the app creation process - Create an App
+2.Choose an App type (Business, Consumer, Gaming, Workplace etc)
+3.Set your app name and email
+Once you have completed the app creation flow your app will be loaded in the App Dashboard. Add required products to your App
+Messenger - With the Messenger Platform you can build messaging solutions that allow you to connect to your customers, potential customers, and followers.
+Instagram - Conversations between your Instagram Professional Account and Instagram users.
+Whatsapp - start conversations with customers in minutes, send customer care notifications or purchase updates, offer your customers a level of personalized service and provide support in the channel that your customers prefer to be reached on.
+Webhooks - Webhooks allows you to receive real-time HTTP notifications of changes to specific objects in the Facebook Social Graph
+
+
+Permissions
+Before an app can be made public, it typically must go through App Review. During review, apps can request approval for specific permissions, which control the types of data the app can access when using the Graph API.
+Even if you set up a Webhook and subscribe to specific fields on an object type, you won't receive notifications of any changes to an object of that type unless:
+
+1.your app has been approved for the permission(s) that corresponds to that type of data, and
+2.the object that owns the data has granted your app permission to access that data (e.g., a User allowing your app to access their Feed)
+3. Create/Add a page
+4. Generate Access Token (To generate an app access token, you need:Your App ID & Your App Secret)
+5. Add callback URL for webhook and add verification token
+6. Select permissions according to our requirement (Verification process may take time to get access for each permission).
+
+
+Instagram ---- Add Instagram business accounts to your Business Manager. 
+Add an Instagram account to your Business Manager
+To add an Instagram account in your Business Manager:
+
+Go to Business settings.
+Click Accounts.
+Click Instagram accounts.
+Click the blue Add button.
+Click Connect your Instagram account
+Enter your Instagram username and password. Note: We may send you a security code to the email address or phone number associated with the account to verify your identity.
+
+
+
+WhatsApp ------
+Display Name – Set up the business name displayed in WhatsApp messages.
+Phone Numbers - Associate a phone number with your WhatsApp Business Account
+Webhooks - Set up webhooks to receive notifications for when a customer sends your business a message, a customer updates their phone number, review and quaility status updates for your WhatsApp Business Account.

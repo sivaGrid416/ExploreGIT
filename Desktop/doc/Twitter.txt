@@ -1,0 +1,52 @@
+Twitter Integration:
+
+Twitter API
+The Twitter API is a set of programmatic endpoints that can be used to understand or build the conversation on Twitter. 
+
+This API allows you to find and retrieve, engage with, or create a variety of different resources including the following:
+
+Tweets
+Users
+Spaces
+Direct Messages
+Lists
+Trends
+Media
+Places
+
+Projects and Twitter API access levels
+At this time, there are three different levels of access that are applied at the Project-level:
+
+Essential access
+Elevated access
+Academic research access
+
+Essential access
+This access level is provided to anyone who has signed up for a developer account.
+
+Number of Apps within that Project: 1
+Tweet consumption cap: 500,000 Tweets per month
+
+Elevated access
+This access level is provided to anyone who has applied for additional access via the developer portal. 
+
+Number of Apps within that Project: 3
+Tweet consumption cap: 2 million Tweets per month
+
+Academic Research access
+This access level is provided to academic researchers who meet a certain set of requirements and applied for additional access via the developer portal.
+
+Number of Apps within that Project: 1
+Tweet consumption cap: 10 million Tweets per month
+
+
+You need a Twitter profile to integrate. You use your Twitter username and password to sign in for developer account. (https://developer.twitter.com)
+
+Enter Basic Info, project details, Review the details and accept terms & conditions.
+We need to verify email account what we gave to get developer account dashboard.
+1.Start the app creation process - Create an App
+2.Choose an App Environment (Development, Staging, Production)
+3.Set your app name then we ll get API Key, API Key Secret and Bearer Token.
+Once you have completed the app creation flow your app will be loaded in the App Dashboard.
+Go To App Settings and set User authentication settings like permissions, webhook urls.
+

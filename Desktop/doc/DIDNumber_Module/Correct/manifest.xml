@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<module>
+<name>DIDNumber</name>
+<label>DIDNumber</label>
+<parent>Tools</parent>
+<version>1.0</version>
+<dependencies>
+       <vtiger_version>7.1.0</vtiger_version>
+       <vtiger_max_version>7.*</vtiger_max_version>
+   </dependencies>
+  <license>
+    <inline><![CDATA[***************************************************************************************************************************
+ *  Module              : DIDNumber
+ *  Version             : 1.0
+ *  Vtiger              : 7.1.0
+ *  Author              : astCRM Systems Pvt. Ltd
+ ****************************************************************************************************************************
+]]></inline>
+  </license>
+	<tables>
+		<table>
+			<name>vtiger_didnumber</name>
+			<sql><![CDATA[CREATE TABLE `vtiger_didnumber` (
+    `didnumberid` int(11) NOT NULL,
+    `didno` varchar(255) DEFAULT NULL,
+    `price_per_week` VARCHAR(255) DEFAULT NULL,
+    `price_per_month` TEXT DEFAULT NULL,
+      PRIMARY KEY (`didnumberid`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+		</table>
+		<table>
+			<name>vtiger_didnumbercf</name>
+			<sql><![CDATA[CREATE TABLE `vtiger_didnumbercf` (
+  `didnumberid` int(11) NOT NULL,
+  PRIMARY KEY (`didnumberid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+		</table>
+    <table>
+			<name>vtiger_didnumber_user_field</name>
+			<sql><![CDATA[CREATE TABLE `vtiger_didnumber_user_field` (
+  `recordid` int(25) NOT NULL,
+  `userid` int(25) NOT NULL,
+  `starred` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+		</table>
+	</tables>
+<blocks>
+<block>
+<label>DID Number Information</label>
+<sequence>1</sequence>
+<show_title>0</show_title>
+<visible>0</visible>
+<create_view>0</create_view>
+<edit_view>0</edit_view>
+<detail_view>0</detail_view>
+<display_status>0</display_status>
+<iscustom>0</iscustom>
+<islist>0</islist>
+<fields>
+<field>
+<fieldname>didno</fieldname>
+<uitype>1</uitype>
+<columnname>didno</columnname>
+<columntype>VARCHAR(255)</columntype>
+<tablename>vtiger_didnumber</tablename>
+<generatedtype>1</generatedtype>
+<fieldlabel>DID Number</fieldlabel>
+<readonly>1</readonly>
+<presence>2</presence>
+<sequence>1</sequence>
+<maximumlength>255</maximumlength>
+<typeofdata>V~O</typeofdata>
+<quickcreate>0</quickcreate>
+<quickcreatesequence></quickcreatesequence>
+<displaytype>1</displaytype>
+<info_type>BAS</info_type>
+<helpinfo><![CDATA[]]></helpinfo>
+<masseditable>0</masseditable>
+<entityidentifier>
+<fieldname>didno</fieldname>
+<entityidfield>didnumberid</entityidfield>
+<entityidcolumn>didnumberid</entityidcolumn>
+</entityidentifier>
+</field>
+<field>
+<fieldname>price_per_week</fieldname>
+<uitype>2</uitype>
+<columnname>price_per_week</columnname>
+<columntype>VARCHAR(100)</columntype>
+<tablename>vtiger_didnumber</tablename>
+<generatedtype>1</generatedtype>
+<fieldlabel>Price Per Week</fieldlabel>
+<readonly>1</readonly>
+<presence>2</presence>
+<sequence>2</sequence>
+<maximumlength>100</maximumlength>
+<typeofdata>V~O</typeofdata>
+<quickcreate>0</quickcreate>
+<quickcreatesequence></quickcreatesequence>
+<displaytype>1</displaytype>
+<info_type>BAS</info_type>
+<helpinfo><![CDATA[]]></helpinfo>
+<masseditable>0</masseditable>
+<summaryfield>1</summaryfield>
+</field>
+<field>
+<fieldname>price_per_month</fieldname>
+<uitype>2</uitype>
+<columnname>price_per_month</columnname>
+<columntype>VARCHAR(100)</columntype>
+<tablename>vtiger_didnumber</tablename>
+<generatedtype>1</generatedtype>
+<fieldlabel>Price Per Month</fieldlabel>
+<readonly>1</readonly>
+<presence>2</presence>
+<sequence>2</sequence>
+<maximumlength>100</maximumlength>
+<typeofdata>V~O</typeofdata>
+<quickcreate>0</quickcreate>
+<quickcreatesequence></quickcreatesequence>
+<displaytype>1</displaytype>
+<info_type>BAS</info_type>
+<helpinfo><![CDATA[]]></helpinfo>
+<masseditable>0</masseditable>
+<summaryfield>1</summaryfield>
+</field>
+<field>
+<fieldname>assigned_user_id</fieldname>
+<uitype>53</uitype>
+<columnname>smownerid</columnname>
+<columntype>INT(19)</columntype>
+<tablename>vtiger_crmentity</tablename>
+<generatedtype>1</generatedtype>
+<fieldlabel>Assigned To</fieldlabel>
+<readonly>1</readonly>
+<presence>2</presence>
+<defaultvalue></defaultvalue>
+<sequence>3</sequence>
+<maximumlength>100</maximumlength>
+<typeofdata>V~M</typeofdata>
+<quickcreate>0</quickcreate>
+<quickcreatesequence></quickcreatesequence>
+<displaytype>1</displaytype>
+<info_type>BAS</info_type>
+<helpinfo><![CDATA[]]></helpinfo>
+<masseditable>1</masseditable>
+</field>
+<field>
+          <fieldname>createdtime</fieldname>
+          <uitype>70</uitype>
+          <columnname>createdtime</columnname>
+          <tablename>vtiger_crmentity</tablename>
+          <generatedtype>1</generatedtype>
+          <fieldlabel>Created Time</fieldlabel>
+          <readonly>1</readonly>
+          <presence>2</presence>
+          <defaultvalue></defaultvalue>
+          <sequence>12</sequence>
+          <maximumlength>100</maximumlength>
+          <typeofdata>T~O</typeofdata>
+          <quickcreate>1</quickcreate>
+          <quickcreatesequence></quickcreatesequence>
+          <displaytype>2</displaytype>
+          <info_type>BAS</info_type>
+          <masseditable>1</masseditable>
+        </field>
+        <field>
+          <fieldname>modifiedtime</fieldname>
+          <uitype>70</uitype>
+          <columnname>modifiedtime</columnname>
+          <tablename>vtiger_crmentity</tablename>
+          <generatedtype>1</generatedtype>
+          <fieldlabel>Modified Time</fieldlabel>
+          <readonly>1</readonly>
+          <presence>2</presence>
+          <defaultvalue></defaultvalue>
+          <sequence>13</sequence>
+          <maximumlength>100</maximumlength>
+          <typeofdata>T~O</typeofdata>
+          <quickcreate>1</quickcreate>
+          <quickcreatesequence></quickcreatesequence>
+          <displaytype>2</displaytype>
+          <info_type>BAS</info_type>
+          <masseditable>1</masseditable>
+        </field>
+</fields>
+</block>
+</blocks>
+<customviews>
+<customview>
+<viewname>All</viewname>
+<setdefault>true</setdefault>
+<setmetrics>false</setmetrics>
+<fields>
+<field>
+<fieldname>didno</fieldname>
+<columnindex>2</columnindex>
+</field>
+<field>
+<fieldname>price_per_week</fieldname>
+<columnindex>3</columnindex>
+</field>
+<field>
+<fieldname>price_per_month</fieldname>
+<columnindex>4</columnindex>
+</field>
+</fields>
+</customview>
+</customviews>
+<sharingaccess>
+<default>public_readwritedelete</default>
+</sharingaccess>
+<actions>
+<action>
+<name><![CDATA[Import]]></name>
+<status>enabled</status>
+</action>
+<action>
+<name><![CDATA[Export]]></name>
+<status>enabled</status>
+</action>
+<action>
+<name><![CDATA[Merge]]></name>
+<status>enabled</status>
+</action>
+</actions>
+<crons>
+</crons>
+</module>
